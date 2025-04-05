@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendation Survey</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Find the Perfect Product</h2>
+        <form method="post">
+            <label>What are you looking for?</label><br>
+            <select name="product_type" required>
+                <option value="Laptop">Laptop</option>
+                <option value="Mobile">Mobile</option>
+            </select><br><br>
+
+            <label>Your Budget (USD):</label><br>
+            <input type="number" name="budget" required><br><br>
+
+            <label>Main Usage:</label><br>
+            <select name="usage" required>
+                <option value="Office Work">Office Work</option>
+                <option value="Gaming">Gaming</option>
+                <option value="Multimedia">Multimedia</option>
+                <option value="Photography">Photography</option>
+            </select><br><br>
+
+            <label>Preferred Brand:</label><br>
+            <input type="text" name="brand" required><br><br>
+
+            <input type="submit" value="Get Recommendation">
+        </form>
+    </div>
+</body>
+</html>

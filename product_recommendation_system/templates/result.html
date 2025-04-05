@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommendation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Your Recommended Product:</h2>
+        <p>{{ recommendation }}</p>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
